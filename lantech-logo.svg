@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="gradLan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7ED321"/>
+      <stop offset="100%" stop-color="#1B5E20"/>
+    </linearGradient>
+    <linearGradient id="gradTech" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1E88E5"/>
+      <stop offset="100%" stop-color="#0D47A1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="900" fill="#ffffff"/>
+
+  <!-- Eagle head (simple, embroidery-friendly vector style) -->
+  <g id="eagle" transform="translate(800 260)">
+    <!-- Shadow/outline -->
+    <path d="M0,-150
+             C-120,-150 -210,-55 -210,60
+             C-210,150 -150,225 -70,260
+             C-45,272 -25,288 0,300
+             C25,288 45,272 70,260
+             C150,225 210,150 210,60
+             C210,-55 120,-150 0,-150 Z"
+          fill="#0B1A2A"/>
+
+    <!-- Face base -->
+    <path d="M0,-135
+             C-105,-135 -190,-55 -190,55
+             C-190,135 -140,205 -65,238
+             C-40,249 -22,265 0,280
+             C22,265 40,249 65,238
+             C140,205 190,135 190,55
+             C190,-55 105,-135 0,-135 Z"
+          fill="#F5F7FB"/>
+
+    <!-- Feather accents -->
+    <path d="M-150,35 C-120,10 -85,0 -60,0 C-95,25 -115,55 -125,95 C-142,80 -155,60 -150,35 Z"
+          fill="#D7DEE8"/>
+    <path d="M150,35 C120,10 85,0 60,0 C95,25 115,55 125,95 C142,80 155,60 150,35 Z"
+          fill="#D7DEE8"/>
+
+    <!-- Brow -->
+    <path d="M-120,-25 C-70,-60 -25,-70 0,-70 C25,-70 70,-60 120,-25
+             C70,-35 25,-40 0,-40 C-25,-40 -70,-35 -120,-25 Z"
+          fill="#0B1A2A"/>
+
+    <!-- Eyes (green) -->
+    <g>
+      <path d="M-78,5 C-50,-8 -30,-8 -8,5 C-28,20 -50,22 -78,5 Z" fill="#14314F"/>
+      <circle cx="-44" cy="8" r="12" fill="#2ECC71"/>
+      <circle cx="-44" cy="8" r="6" fill="#0B1A2A"/>
+
+      <path d="M78,5 C50,-8 30,-8 8,5 C28,20 50,22 78,5 Z" fill="#14314F"/>
+      <circle cx="44" cy="8" r="12" fill="#2ECC71"/>
+      <circle cx="44" cy="8" r="6" fill="#0B1A2A"/>
+    </g>
+
+    <!-- Beak (yellow) -->
+    <path d="M0,5
+             C-28,5 -55,20 -60,45
+             C-65,75 -30,110 0,120
+             C30,110 65,75 60,45
+             C55,20 28,5 0,5 Z"
+          fill="#F4B400" stroke="#B07D00" stroke-width="6" />
+    <path d="M0,55 C-18,55 -30,62 -34,78 C-25,92 -12,102 0,107 C12,102 25,92 34,78 C30,62 18,55 0,55 Z"
+          fill="#D18A00" opacity="0.55"/>
+
+    <!-- Center tuft -->
+    <path d="M0,125 C-20,140 -35,165 -38,190 C-20,205 -10,220 0,238 C10,220 20,205 38,190 C35,165 20,140 0,125 Z"
+          fill="#F5F7FB" stroke="#0B1A2A" stroke-width="6"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g id="wordmark" transform="translate(210 560)">
+    <!-- LanTech -->
+    <text x="0" y="0" font-family="Montserrat, Poppins, Arial, sans-serif" font-size="180" font-weight="800" letter-spacing="-2">
+      <tspan fill="url(#gradLan)">Lan</tspan>
+      <tspan fill="url(#gradTech)">Tech</tspan>
+    </text>
+
+    <!-- Technologies bar -->
+    <g transform="translate(0 40)">
+      <rect x="0" y="40" width="1180" height="96" rx="10" fill="#1B5E20"/>
+      <text x="590" y="110" text-anchor="middle"
+            font-family="Montserrat, Poppins, Arial, sans-serif"
+            font-size="58" font-weight="700" letter-spacing="10" fill="#FFFFFF">
+        TECHNOLOGIES
+      </text>
+    </g>
+  </g>
+
+  <!-- Align eagle to sit above the T -->
+  <use href="#eagle" x="0" y="0"/>
+</svg>
