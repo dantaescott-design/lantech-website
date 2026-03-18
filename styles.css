@@ -192,8 +192,8 @@ footer{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 78px;
-  gap: 24px;
+  height: 64px;   /* 🔥 controls header height */
+  padding: 0 20px;
 }
 
 .brand {
@@ -307,4 +307,8 @@ footer{
 }
 .capabilities-hero {
   padding: 90px 0 60px;
+}
+.logo {
+  height: 28px;   /* controls size */
+  width: auto;
 }
