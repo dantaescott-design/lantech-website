@@ -617,3 +617,60 @@ footer{
     text-align: left;
   }
 }
+.hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-visual-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  text-align: center;
+}
+
+.vosb-logo {
+  width: 180px;
+  height: auto;
+  display: block;
+}
+
+.cred-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(16,185,129,.28);
+  background: rgba(16,185,129,.10);
+  color: #baf7dd;
+  font-size: 0.95rem;
+  font-weight: 700;
+  box-shadow: 0 10px 24px rgba(0,0,0,.18);
+}
+
+.cred-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--green), var(--blue));
+  box-shadow: 0 0 12px rgba(37,99,235,.45);
+}
+
+.cred-text {
+  letter-spacing: 0.02em;
+}
+
+.cred-meta {
+  display: grid;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.cred-meta strong {
+  color: #ffffff;
+}
