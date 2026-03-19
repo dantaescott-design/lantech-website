@@ -560,3 +560,60 @@ footer{
     max-width:none;
   }
 }
+/* ===== HERO RIGHT SIDE BADGE ===== */
+
+.hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-visual-wrap {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+/* VOSB BADGE */
+.cred-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(16,185,129,.28);
+  background: rgba(16,185,129,.10);
+  color: #baf7dd;
+  font-size: 0.95rem;
+  font-weight: 700;
+  box-shadow: 0 10px 24px rgba(0,0,0,.18);
+}
+
+.cred-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--green), var(--blue));
+  box-shadow: 0 0 12px rgba(37,99,235,.45);
+}
+
+.cred-text {
+  letter-spacing: 0.02em;
+}
+
+/* RIGHT SIDE TEXT */
+.hero-side-copy {
+  max-width: 420px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* MOBILE FIX */
+@media (max-width: 720px) {
+  .hero-side-copy {
+    text-align: left;
+  }
+}
