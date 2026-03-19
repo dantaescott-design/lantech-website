@@ -51,7 +51,7 @@ img{max-width:100%;display:block}
   align-items:center;
   justify-content:space-between;
   height:72px;
-  padding:0 20px;
+  padding:0 40px;   /* ⬅️ more horizontal spacing */
 }
 
 .brand{
