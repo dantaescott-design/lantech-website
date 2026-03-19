@@ -36,6 +36,12 @@ img{max-width:100%;display:block}
   padding:0 24px;
 }
 
+/* wider header area only */
+.site-header .container{
+  max-width:1600px;
+  padding:0 40px;
+}
+
 /* ===== HEADER ===== */
 .site-header{
   position:sticky;
@@ -51,7 +57,7 @@ img{max-width:100%;display:block}
   align-items:center;
   justify-content:space-between;
   height:72px;
-  padding:0 40px;   /* ⬅️ more horizontal spacing */
+  width:100%;
 }
 
 .brand{
@@ -61,6 +67,7 @@ img{max-width:100%;display:block}
   overflow:hidden;
   height:72px;
   flex-shrink:0;
+  margin-right:60px;
 }
 
 /* This is tuned for your current logo file, which has a lot of empty space around it */
@@ -77,7 +84,7 @@ img{max-width:100%;display:block}
   display:flex;
   align-items:center;
   gap:32px;
-  margin-left:auto;   /* ⬅️ pushes nav all the way right */
+  margin-left:auto;
 }
 
 .nav-links a{
