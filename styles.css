@@ -420,3 +420,22 @@ footer{
     padding:0 18px;
   }
 }
+.capabilities-hero .lead{
+  max-width: 900px;
+}
+
+.capabilities-hero h1{
+  max-width: 14ch;
+}
+
+.about-card h2,
+.contact-card h2{
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.about-card p,
+.contact-card p{
+  color: var(--muted);
+  line-height: 1.8;
+}
