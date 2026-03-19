@@ -324,3 +324,17 @@ footer{
 .brand-logo{
   height: 50px !important;
 }
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.brand-logo {
+  height: 160px;
+  width: auto;
+  display: block;
+  margin-top: -52px;
+  margin-bottom: -52px;
+}
