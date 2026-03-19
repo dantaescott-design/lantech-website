@@ -76,7 +76,8 @@ img{max-width:100%;display:block}
 .nav-links{
   display:flex;
   align-items:center;
-  gap:28px;
+  gap:32px;
+  margin-left:auto;   /* ⬅️ pushes nav all the way right */
 }
 
 .nav-links a{
