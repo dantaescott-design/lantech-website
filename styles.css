@@ -321,3 +321,6 @@ footer{
   height: 28px;   /* controls size */
   width: auto;
 }
+.brand-logo{
+  height: 50px !important;
+}
