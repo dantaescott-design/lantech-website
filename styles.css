@@ -655,3 +655,15 @@ footer{
   transform: translateY(-4px);
   transition: 0.3s ease;
 }
+
+/* Accessibility, navigation and mobile corrections - October 26, 2026 */
+.skip-link{position:fixed;top:-100px;left:16px;background:#fff;color:#07111f;padding:14px 18px;z-index:2000;border-radius:8px}
+.skip-link:focus{top:12px}
+a:focus-visible{outline:3px solid #93f5ca;outline-offset:5px}
+main{scroll-margin-top:110px}section{scroll-margin-top:110px}
+.brand-logo{filter:brightness(1.4)}
+.card h2{font-size:1.2rem;margin:0 0 12px}
+.contact-card a:not(.btn){text-decoration:underline;text-underline-offset:3px}
+@media(max-width:900px){.site-header .container{padding:10px 18px}.nav{gap:4px}.brand{margin-right:0}.nav-links{margin-left:0;gap:8px 18px;justify-content:flex-start;width:100%}.nav-links a{display:inline-flex;align-items:center;min-height:44px}.hero{padding-top:36px}}
+@media(max-width:480px){h1{font-size:clamp(2rem,9vw,2.6rem);overflow-wrap:anywhere}.eyebrow{font-size:.8rem}.about-card,.contact-card{padding:22px}.cta-row .btn{width:100%;text-align:center}.hero-grid,.band-grid,.contact-grid,.about-grid{min-width:0}.lead{font-size:1.05rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
